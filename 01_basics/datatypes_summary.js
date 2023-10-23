@@ -28,3 +28,23 @@ const myFunction = function(){
 console.log(typeof myobj)
 
 
+// ****************** Memory 
+//Stack(primitive), Heap(Non-primitive)
+
+let myYoutubename = "kris@.com"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename)
+console.log(anothername)
+
+//**** heap */
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "hitesh@goggle.com"
+
+console.log(userOne)
+console.log(userTwo)
