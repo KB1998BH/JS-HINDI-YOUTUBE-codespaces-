@@ -27,14 +27,41 @@ const obj2 = {3:"a", 4:"b"}
 
 //--spread operator 
 const obj3 = {...obj1, ...obj2}
-console.log(obj3)
+// console.log(obj3)
 
-////--when fetch data from database using array object 
-//user[1].email
-console.log(tinderuser);
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-// array under array
-console.log(Object.entries(tinderuser));
+// ////--when fetch data from database using array object 
+// //user[1].email
+// console.log(tinderuser);
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// // array under array
+// console.log(Object.entries(tinderuser));
 
-console.log(tinderuser.hasOwnProperty('name'));
+// console.log(tinderuser.hasOwnProperty('name'));
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseinstructor: "hitesh"
+}
+
+//---object destructuring----////
+const {courseinstructor: instructor} = course
+console.log(instructor);
+
+////////-----json-----///
+///--api call--//
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+
+// }
+
+//api array format ----////////
+// [
+//     {},
+//     {},
+//     {}
+// ]
